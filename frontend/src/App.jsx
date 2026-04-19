@@ -5,6 +5,7 @@ import Carrito from './pages/Carrito/Carrito'
 import Pago from './pages/Pago/Pago'
 import Catalogo from './pages/Catalogo/Catalogo'
 import Producto from './pages/Producto/Producto'
+import Nosotros from './pages/Nosotros/Nosotros'
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
         <Route path="/producto/:id" element={
           <Layout>
             <Producto />
+          </Layout>
+        }/>
+        <Route path="/nosotros" element={
+          <Layout>
+            <Nosotros />
           </Layout>
         }/>
       </Routes>
