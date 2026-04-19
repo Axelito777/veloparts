@@ -1,0 +1,310 @@
+.mecanico {
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mecanico-header {
+  margin-bottom: 28px;
+}
+
+.mecanico-header h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+  margin-bottom: 6px;
+}
+
+.mecanico-header p {
+  font-size: 14px;
+  color: var(--color-texto-secundario);
+}
+
+.mecanico-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 0.5px solid var(--color-borde);
+  margin-bottom: 28px;
+}
+
+.mecanico-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--color-texto-secundario);
+  border-bottom: 2px solid transparent;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.2s;
+}
+
+.mecanico-tab:hover {
+  color: var(--color-texto-principal);
+}
+
+.mecanico-tab.activo {
+  color: var(--color-acento);
+  border-bottom-color: var(--color-acento);
+  font-weight: 500;
+}
+
+.mecanico-tab-badge {
+  background: var(--color-acento);
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mecanico-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mecanico-card {
+  background: var(--color-tarjeta);
+  border: 0.5px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mecanico-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.mecanico-card-cliente {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+  margin-bottom: 3px;
+}
+
+.mecanico-card-meta {
+  font-size: 13px;
+  color: var(--color-texto-secundario);
+}
+
+.mecanico-estado {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.mecanico-bici-info {
+  display: flex;
+  gap: 24px;
+  padding: 12px 16px;
+  background: var(--color-fondo);
+  border-radius: 8px;
+}
+
+.mecanico-bici-tipo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mecanico-bici-label {
+  font-size: 11px;
+  color: var(--color-texto-secundario);
+}
+
+.mecanico-bici-valor {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+}
+
+.mecanico-piezas-titulo {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+  margin-bottom: 8px;
+}
+
+.mecanico-piezas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.mecanico-pieza {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 12px;
+  background: var(--color-fondo);
+  border-radius: 6px;
+  border: 0.5px solid var(--color-borde);
+}
+
+.mecanico-pieza-cat {
+  font-size: 11px;
+  color: var(--color-texto-secundario);
+}
+
+.mecanico-pieza-nombre {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+}
+
+.mecanico-bici-visual {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.mecanico-descripcion {
+  padding: 12px 14px;
+  background: var(--color-fondo);
+  border-radius: 8px;
+  border-left: 3px solid var(--color-acento);
+}
+
+.mecanico-desc-label {
+  font-size: 12px;
+  color: var(--color-texto-secundario);
+  margin-bottom: 4px;
+}
+
+.mecanico-desc-texto {
+  font-size: 14px;
+  color: var(--color-texto-principal);
+  font-style: italic;
+}
+
+.mecanico-alerta-pieza {
+  padding: 10px 14px;
+  background: #FFF0E6;
+  border-radius: 8px;
+  border-left: 3px solid #993C1D;
+  font-size: 13px;
+  color: #993C1D;
+}
+
+.mecanico-acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.mecanico-btn {
+  padding: 9px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.mecanico-btn:hover {
+  opacity: 0.85;
+}
+
+.mecanico-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.mecanico-btn-aceptar {
+  background: var(--color-acento);
+  color: white;
+}
+
+.mecanico-btn-listo {
+  background: #185FA5;
+  color: white;
+}
+
+.mecanico-btn-pieza {
+  background: #FFF0E6;
+  color: #993C1D;
+  border: 0.5px solid #993C1D;
+}
+
+.mecanico-btn-volver {
+  background: transparent;
+  color: var(--color-texto-principal);
+  border: 0.5px solid var(--color-borde);
+}
+
+.mecanico-completado {
+  font-size: 13px;
+  color: #0F6E56;
+  font-weight: 500;
+}
+
+.mecanico-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.mecanico-modal {
+  background: var(--color-tarjeta);
+  border-radius: 12px;
+  padding: 28px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mecanico-modal h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-texto-principal);
+}
+
+.mecanico-modal p {
+  font-size: 14px;
+  color: var(--color-texto-secundario);
+  line-height: 1.6;
+}
+
+.mecanico-modal textarea {
+  padding: 10px 14px;
+  border: 0.5px solid var(--color-borde);
+  border-radius: 8px;
+  background: var(--color-fondo);
+  color: var(--color-texto-principal);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.mecanico-modal textarea:focus {
+  border-color: var(--color-acento);
+}
+
+.mecanico-modal-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}

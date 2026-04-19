@@ -8,6 +8,7 @@ import Producto from './pages/Producto/Producto'
 import Nosotros from './pages/Nosotros/Nosotros'
 import Agenda from './pages/Agenda/Agenda'
 import Armador from './pages/Armador/Armador'
+import Mecanico from './pages/Mecanico/Mecanico'
 
 
 function App() {
@@ -52,6 +53,11 @@ function App() {
         <Route path="/armador" element={
           <Layout>
             <Armador />
+          </Layout>
+        }/>
+        <Route path="/mecanico" element={
+          <Layout>
+            <Mecanico />
           </Layout>
         }/>
       </Routes>
