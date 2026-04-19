@@ -6,6 +6,8 @@ import Pago from './pages/Pago/Pago'
 import Catalogo from './pages/Catalogo/Catalogo'
 import Producto from './pages/Producto/Producto'
 import Nosotros from './pages/Nosotros/Nosotros'
+import Agenda from './pages/Agenda/Agenda'
+
 
 function App() {
   return (
@@ -39,6 +41,11 @@ function App() {
         <Route path="/nosotros" element={
           <Layout>
             <Nosotros />
+          </Layout>
+        }/>
+        <Route path="/agenda" element={
+          <Layout>
+            <Agenda />
           </Layout>
         }/>
       </Routes>
