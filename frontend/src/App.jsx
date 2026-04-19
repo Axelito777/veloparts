@@ -7,6 +7,7 @@ import Catalogo from './pages/Catalogo/Catalogo'
 import Producto from './pages/Producto/Producto'
 import Nosotros from './pages/Nosotros/Nosotros'
 import Agenda from './pages/Agenda/Agenda'
+import Armador from './pages/Armador/Armador'
 
 
 function App() {
@@ -46,6 +47,11 @@ function App() {
         <Route path="/agenda" element={
           <Layout>
             <Agenda />
+          </Layout>
+        }/>
+        <Route path="/armador" element={
+          <Layout>
+            <Armador />
           </Layout>
         }/>
       </Routes>
